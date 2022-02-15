@@ -11,7 +11,7 @@ Resources:
       Description: 'Dado um cliente, obtém as informações em cache (redis), sem autenticação'
       MemorySize: 128
       Timeout: 3
-      Role: 'arn:aws:iam::297738258633:role/LambdaFunctionsRole'
+      Role: ''
       Events:
         Api1:
           Type: Api
@@ -20,10 +20,8 @@ Resources:
             Method: GET
       VpcConfig:
         SecurityGroupIds:
-          - sg-03ed5bdb6048d0544
+          - 
         SubnetIds:
-          - subnet-0448a35c96f4a061f
-          - subnet-0b5901f76345dc1a8
+          - 
       Layers:
-        - 'arn:aws:lambda:sa-east-1:297738258633:layer:redis:12'
-        - 'arn:aws:lambda:sa-east-1:297738258633:layer:utils:20'
+        - ''
